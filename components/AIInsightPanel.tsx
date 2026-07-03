@@ -73,7 +73,7 @@ export function AIInsightPanel({
     } catch (error) {
       console.error("AI request failed:", error);
       setAiResponse(
-        "I could not reach the AI route. Make sure your FastAPI backend is running on http://127.0.0.1:8000."
+        "I could not reach the AI route. Please try again in about a minute"
       );
     } finally {
       setLoadingAI(false);
