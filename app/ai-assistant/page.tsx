@@ -12,7 +12,8 @@ import {
 } from "lucide-react";
 import { DashboardShell } from "@/components/DashboardShell";
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE =
+  process.env.NEXT_PUBLIC_API_BASE || "http://127.0.0.1:8000";
 
 type AIResult = {
   id?: number;

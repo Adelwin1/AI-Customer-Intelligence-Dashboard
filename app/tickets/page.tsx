@@ -5,7 +5,8 @@ import { Search, RefreshCw, TicketIcon } from "lucide-react";
 import { DashboardShell } from "@/components/DashboardShell";
 import { Ticket } from "@/components/TicketList";
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE =
+  process.env.NEXT_PUBLIC_API_BASE || "http://127.0.0.1:8000";
 
 export default function TicketsPage() {
   const [tickets, setTickets] = useState<Ticket[]>([]);

@@ -21,7 +21,8 @@ import { SearchPanel } from "@/components/SearchPanel";
 import { ActivityFeed } from "@/components/ActivityFeed";
 import { ExecutiveBrief } from "@/components/ExecutiveBrief";
 
-const API_BASE = "http://127.0.0.1:8000";
+const API_BASE =
+  process.env.NEXT_PUBLIC_API_BASE || "http://127.0.0.1:8000";
 
 type Metrics = {
   total_tickets: number;
